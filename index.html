@@ -30,6 +30,11 @@
   section { padding: 2.5rem 0; }
   h2 { font-size: 1.4rem; margin: 0 0 1.25rem; }
 
+  .shots { display: flex; gap: 1.1rem; justify-content: center; flex-wrap: wrap; padding: 0 0 1rem; }
+  .shots img { width: 230px; max-width: 70%; border-radius: 26px; border: 1px solid var(--line);
+               box-shadow: 0 12px 32px rgba(0,0,0,.18); }
+  @media (max-width: 560px) { .shots { gap: .8rem; } .shots img { width: 44%; } }
+
   .steps { display: grid; gap: 1rem; }
   @media (min-width: 620px) { .steps { grid-template-columns: 1fr 1fr; } }
   .step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem 1.4rem; }
@@ -61,6 +66,14 @@
 </header>
 
 <main class="wrap">
+  <section>
+    <div class="shots">
+      <img src="shot-roll.png" alt="Roll the dice for a film stock" loading="lazy" width="520" height="1130">
+      <img src="shot-shoot.png" alt="Shoot the roll blind" loading="lazy" width="520" height="1130">
+      <img src="shot-darkroom.png" alt="Develop the roll in the Darkroom" loading="lazy" width="520" height="1130">
+    </div>
+  </section>
+
   <section>
     <h2>How it works</h2>
     <div class="steps">
